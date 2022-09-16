@@ -13,7 +13,8 @@ public class TP1RelacionesAsociacion {
         //crear lotes
         Lote l1 = new Lote("las heras 370", 4.5f, 100);
         Lote l2 = new Lote("3 acequias 850", 6.5f, 150);
-        Lote l3 = new Lote("buenos aires 164", 7.5f, 120);        
+        Lote l3 = new Lote("buenos aires 164", 7.5f, 120); 
+        
         //avaluo lotes
         System.out.println("avaluo de lotes");
         System.out.println("avaluo lote " + l1.idPadron + " es :" + l1.valuar());
