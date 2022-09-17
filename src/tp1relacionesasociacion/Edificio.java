@@ -4,7 +4,7 @@ package tp1relacionesasociacion;
  *
  * @author mativ
  */
-public class Edificio {
+public abstract class Edificio {
     protected float avaluoXmtr;    
 
     public Edificio(float avaluoXmtr) {
@@ -19,8 +19,14 @@ public class Edificio {
         this.avaluoXmtr = avaluoXmtr;
     }
     
-    public void valuar(){}
-    public void demoler(){}
+    public abstract float valuar();
+    
+    public Edificio demoler(){
+        System.out.println("Edificio Demolido");
+    //No es un null especifico para edificio, puede ser para cualquier objeto
+        return null;       
+    //Eliminar Edificios. Asignar un null para perder la refeerencia al objeto
+    }
     
     
 }
