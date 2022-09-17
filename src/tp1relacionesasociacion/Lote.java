@@ -32,4 +32,18 @@ public class Lote {
     public float valuar() {
         return this.avaluoxmt * this.superficie;
     }
+
+    public Edificio getConstruccion() {
+        return construccion;
+    }
+
+    public void setConstruccion(Edificio construccion) {
+        this.construccion = construccion;
+    }
+    
+//    public Edificio crearEdificio (Edificio edificio){
+//    
+//        this.construccion = edificio;
+//        return edificio;
+//    }
 }
