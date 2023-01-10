@@ -1,5 +1,9 @@
 package tp1relacionesasociacion;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 
 /**
@@ -67,4 +71,19 @@ public class Registro {
         return e;
     }
 
+//      public void guardar() {
+//        try {
+//            String Destino = "c:\\Temp\\Escritura_"+".txt";
+//            OutputStream outputStream = new FileOutputStream(Destino);
+//            ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
+//            objectOutputStream.writeObject(this);
+//            
+//            objectOutputStream.close();
+//        } catch (IOException ex) {
+//            throw new RuntimeException(ex.getMessage());
+//        }
+//    }
+    
+       
+    
 }

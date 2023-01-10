@@ -48,9 +48,24 @@ public class TP1RelacionesAsociacion {
             System.out.println("Lote: " + esc.inmueble.idPadron);
             System.out.println("Valor: " + r1.valuar(esc.inmueble));
             System.out.println("Domicilio: " + esc.inmueble.getDomicilio());
+//            esc.guardar();
             System.out.println("--------------------------------------");
+            
         }
         
+      Escritura E1 = new Escritura(1,410,"Domiclio1"); 
+      Escritura E2 = new Escritura(2,420,"Domiclio2"); 
+      Escritura E3 = new Escritura(3,430,"Domiclio3"); 
+      E1.guardar();
+      Escritura E4 = E1.recuperar();
+//        Escritura recuperada = r1.escrituras.get(1).recuperar();
+       
+      
+  
+      
+    
+//        
+
 //        //creo edificio en lote
 //        Edificio e1 = new Edificio(23.5f);
 //        l1.setConstruccion(e1);
@@ -63,5 +78,12 @@ public class TP1RelacionesAsociacion {
        catch(ErrorLote el){
            System.out.println(el.getMessage());
        }
+       
+       
+       
+       
+       
+       
+       
     }
 }
