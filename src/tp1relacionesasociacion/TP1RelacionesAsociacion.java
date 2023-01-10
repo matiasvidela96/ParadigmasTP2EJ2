@@ -1,5 +1,8 @@
 package tp1relacionesasociacion;
 
+import exception.ErrorLote;
+import java.util.ArrayList;
+
 /**
  *
  * @author mativ
@@ -54,7 +57,11 @@ public class TP1RelacionesAsociacion {
 //        //demoler edificio
 //        e1 = e1.demoler();
 //        
-//        Edificio e2 = l2.crearEdificio(15.3f);
-//        e2 = e2.demoler();
+       try{         
+       Edificio e2 = l2.crearEdificio(new PH((byte)1,11f,new ArrayList<Departamento>()));
+       e2 = e2.demoler();}
+       catch(ErrorLote el){
+           System.out.println(el.getMessage());
+       }
     }
 }

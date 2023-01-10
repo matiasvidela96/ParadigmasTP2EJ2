@@ -1,5 +1,7 @@
 package tp1relacionesasociacion;
 
+import exception.ErrorLote;
+
 /**
  *
  * @author mativ
@@ -41,9 +43,13 @@ public class Lote {
         this.construccion = construccion;
     }
     
-//    public Edificio crearEdificio (Edificio edificio){
-//    
-//        this.construccion = edificio;
-//        return edificio;
-//    }
+    public Edificio crearEdificio (Edificio edificio) {
+     
+        if (this.construccion != null) {
+            throw new ErrorLote("No se puede construir! Ya existe un edificio!");
+        }
+        this.construccion = edificio;
+        return edificio;
+    
+ }
 }

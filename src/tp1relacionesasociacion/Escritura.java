@@ -60,8 +60,5 @@ public class Escritura {
     }
     
     
-    public static void matias(){}
-    
-    private void a(){}
-    private void a (int a){}
+   
 }
